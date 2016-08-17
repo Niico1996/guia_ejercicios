@@ -6,16 +6,16 @@ public class Demo2 {
 		 * Devuelve verdadero si todos los elementos están en el conjunto.
 		 */
 		public static boolean pertenecenTodos(int[] elems, int[] conjunto) {
-			int cont2=0;
+			int cont=0;
 			if(elems.length<conjunto.length){
 		
 			for(int i=0;i<elems.length;i++){
 				
 				if(estaEn(elems[i],conjunto)==true){
-						cont2++;
+						cont++;
 					}
 			}
-			if(cont2==elems.length){
+			if(cont==elems.length){
 				return true;
 			
 			}
@@ -25,10 +25,10 @@ public class Demo2 {
 				for(int i=0;i<conjunto.length;i++){
 					
 					if(estaEn(elems[i],conjunto)==true){
-							cont2++;
+							cont++;
 						}
 				}
-				if(cont2==elems.length){
+				if(cont==elems.length){
 					return true;
 				
 				}
